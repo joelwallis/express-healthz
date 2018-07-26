@@ -3,6 +3,7 @@
 Health check middleware for Express.
 
 [![Build Status](https://travis-ci.org/joelwallis/express-healthz.svg?branch=master)](https://travis-ci.org/joelwallis/express-healthz)
+[![Known Vulnerabilities](https://snyk.io/test/github/joelwallis/express-healthz/badge.svg?targetFile=package.json)](https://snyk.io/test/github/joelwallis/express-healthz?targetFile=package.json)
 
 ## Usage
 
