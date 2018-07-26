@@ -1,0 +1,5 @@
+node_modules
+
+# This file is generated through the `build` script, which is triggered
+# automatically during `npm publish`
+/index.js

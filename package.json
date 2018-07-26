@@ -1,0 +1,38 @@
+{
+  "name": "express-healthz",
+  "version": "1.0.0",
+  "description": "Health check middleware for Express",
+  "author": "Joel Wallis Jucá <joelwallis@gmail.com>",
+  "repository": "joelwallis/express-healthz",
+  "bugs": "https://github.com/joelwallis/express-healthz/issues",
+  "main": "index.js",
+  "files": [
+    "index.js"
+  ],
+  "keywords": [
+    "express",
+    "healthz",
+    "health",
+    "health-check"
+  ],
+  "license": "ISC",
+  "scripts": {
+    "build": "babel src/index.js -o index.js",
+    "watch": "babel -w src/index.js -o index.js",
+    "prepublishOnly": "for s in lint build; do npm run $s; done",
+    "postpublish": "rm index.js",
+    "lint": "standard --verbose",
+    "test": "mocha -b --require babel-register",
+    "test:watch": "mocha -bw --require babel-register"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "babel-register": "^6.26.0",
+    "chai": "^4.1.2",
+    "express": "^4.16.3",
+    "mocha": "^5.2.0",
+    "sinon": "^6.1.4",
+    "standard": "^11.0.1"
+  }
+}
