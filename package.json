@@ -19,7 +19,7 @@
   "scripts": {
     "build": "babel src/index.js -o index.js",
     "watch": "babel -w src/index.js -o index.js",
-    "prepublishOnly": "for s in lint build; do npm run $s; done",
+    "prepublishOnly": "for s in lint test build; do npm run $s; done",
     "postpublish": "rm index.js",
     "lint": "standard --verbose",
     "test": "mocha -b --require babel-register",
