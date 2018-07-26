@@ -5,7 +5,7 @@ Health check middleware for Express.
 ## Usage
 
 ```js
-import healthz from 'express-healthz'
+const { healthz } = require('express-healthz')
 
 // Create your Express app somehow. E.g.:
 const app = express()
