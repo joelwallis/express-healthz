@@ -2,6 +2,8 @@
 
 Health check middleware for Express.
 
+[![Build Status](https://travis-ci.org/joelwallis/express-healthz.svg?branch=master)](https://travis-ci.org/joelwallis/express-healthz)
+
 ## Usage
 
 ```js
