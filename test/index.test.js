@@ -6,7 +6,7 @@
 
 import chai from 'chai'
 import express from 'express'
-import healthz from '../src'
+import { healthz } from '..'
 import sinon from 'sinon'
 
 const expect = chai.expect
