@@ -5,7 +5,7 @@
  */
 
 export const healthz = (req, res, next) => {
-  (req.method === 'GET' && req.path === '/health')
+  (req.path === '/health' && ['get', 'head'].indexOf(req.method.toLowerCase()) >= 0)
     ? res.status(200).end()
     : next()
 }
